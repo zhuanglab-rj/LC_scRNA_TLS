@@ -1,0 +1,34 @@
+# Configuration file for LC_scRNA_TLS analysis
+# Modify these paths according to your local environment
+
+# Data paths
+data_dir: "data"
+results_dir: "results"
+
+# Specific data file paths (relative to project root)
+combat_data: "data/combat/all.rData"
+res04_data: "data/res0.4_YKB_dim15.rData"
+resident_data: "data/dim35_Resident_Circulating.rData"
+
+# Figure data files
+figure1E_data: "data/1E.txt"
+figure3_data: "data/Fig3C+3D.xlsx"
+figure3E_data: "data/Fig3E.txt"
+figure3F_data: "data/Fig3F.txt"
+figure3G_data: "data/Fig3G.xlsx"
+figure4_data: "data/Fig4B+4C+4D.xlsx"
+
+# TCR data files
+TCR_dir: "data/TCR"
+TCR_stats: "data/TCR/TCR_Statistics.all.txt"
+TCR_percent: "data/TCR/allsingleT.TCR.percent.matrix.txt"
+TCR_count: "data/TCR/allsingleT.TCR.count.matrix.txt"
+
+# Output paths
+output_figures: "results/figures"
+output_TCR: "results/TCR_analysis"
+
+# Analysis parameters
+pca_dims: 35
+tsne_dims: 35
+cluster_resolution: 0.4

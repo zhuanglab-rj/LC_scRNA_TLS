@@ -1,0 +1,27 @@
+name: lc_scrna_tls
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - r-base>=4.0.0
+  - r-seurat>=4.0.0
+  - r-ggplot2>=3.3.0
+  - r-dplyr>=1.0.0
+  - r-tidyr>=1.1.0
+  - r-matrix>=1.3.0
+  - r-patchwork>=1.1.0
+  - r-cowplot>=1.1.0
+  - r-ggbeeswarm>=0.6.0
+  - r-ggsignif>=0.6.0
+  - r-ggalt>=0.4.0
+  - r-ggalluvial>=0.12.0
+  - r-gridextra>=2.3
+  - r-xlsx>=0.6.5
+  - r-complexheatmap>=2.6.0
+  - r-plyr>=1.8.6
+  - r-scales>=1.1.0
+  - r-pheatmap>=1.0.12
+  - pip
+  - pip:
+    - rpy2>=3.4.0
