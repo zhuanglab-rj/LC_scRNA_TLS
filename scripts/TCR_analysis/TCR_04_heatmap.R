@@ -59,9 +59,9 @@ ggsave("results/TCR_analysis/allsingleT.TCR.percent0.001.heatmap.pdf",
     )
     ComplexHeatmap::pheatmap(score,
       color = colorRampPalette(c(
-        "#08519c", "#08519c", "#2171b5",
-        "white", "#ef3b2c", "#cb181d", "#cb181d"
-      ))(75),
+        "#08519c", "#2171b5",
+        "white", "#ef3b2c", "#cb181d"
+      ))(100),
       annotation_col = annotation_col,
       annotation_colors = ann_colors,
       cluster_cols = FALSE,
