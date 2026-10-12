@@ -38,7 +38,7 @@ plot_tls_density <- function(data, y_col, y_label, tag) {
       step_increase = 0.1, textsize = 3,
       map_signif_level = FALSE, test = wilcox.test
     ) +
-    ylim(0, 2.3)
+    ylim(0, 6)
 }
 
 plot_b <- plot_tls_density(data, "TLS.density", "TLS density", "B")
