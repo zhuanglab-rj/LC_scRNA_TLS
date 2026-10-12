@@ -19,11 +19,11 @@ data <- read.table("data/1E.txt",
 
 # Set factor levels for consistent ordering
 data$gene <- factor(data$gene,
-  levels = c("CD3", "CD4", "CD8", "CD20", "CD68", "CD56", "MCT", "PD1", "PD-L1")
+  levels = c("CD3", "CD20", "CD68", "CD56", "tryptase")
 )
 
 # Create split violin plot comparing tumor vs normal tissue
-p <- ggplot(data, aes(x = gene, y = log2(value2), fill = type)) +
+p <- ggplot(data, aes(x = gene, y = density, fill = type)) +
   geom_split_violin(
     draw_quantiles = c(0.25, 0.5, 0.75),
     trim = FALSE,
@@ -34,8 +34,9 @@ p <- ggplot(data, aes(x = gene, y = log2(value2), fill = type)) +
     na.rm = TRUE,
     position = "identity"
   ) +
-  ylab("IHC [log(1+density)]") +
+  ylab("IHC density") +
   xlab("") +
+  scale_y_log10() +
   scale_fill_manual(values = c("#7570B3", "#1b9e77")) +
   theme_set(theme_set(theme_classic(base_size = 20))) +
   theme(axis.text.x = element_text(angle = 0, hjust = 0.5, vjust = 0.5)) +
